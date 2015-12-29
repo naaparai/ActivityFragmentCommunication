@@ -6,24 +6,20 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.EditText;
-import android.widget.Spinner;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class JustFragment extends Fragment{
+public class Fragment3 extends Fragment {
 
-    static EditText editText;
-    View view;
-    public JustFragment() {
+
+    public Fragment3() {
         // Required empty public constructor
     }
-
-    public static Fragment newInstance() {
-        JustFragment instance;
-        instance = new JustFragment();
+    public static Fragment newInstance3() {
+        Fragment3 instance;
+        instance = new Fragment3();
 
         return instance;
     }
@@ -31,13 +27,9 @@ public class JustFragment extends Fragment{
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
         // Inflate the layout for this fragment
-        view= inflater.inflate(R.layout.fragment_just, container, false);
-        editText=(EditText)view.findViewById(R.id.editText);
-        return view;
+        return inflater.inflate(R.layout.fragment_fragment3, container, false);
     }
-
 
 
 }
